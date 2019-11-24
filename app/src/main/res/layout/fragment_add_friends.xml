@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddFriends"
+    android:id="@+id/addfrind_relativelayout"
+    android:background="#313337">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back_img"
+        android:layout_marginTop="20dp"
+        />
+
+
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textCursorDrawable="@null"
+            android:paddingLeft="5dp"
+            android:paddingRight="40dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            />
+
+        <ImageButton
+            android:id="@+id/right_cross_btn"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:src="@null"
+            android:paddingBottom="10dp"
+            android:background="@null"/>
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"></ListView>
+
+
+</RelativeLayout>

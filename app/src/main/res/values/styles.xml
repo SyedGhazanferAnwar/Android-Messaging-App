@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#363a41</item>
+        <item name="colorPrimaryDark">#363a41</item>
+        <item name="colorAccent">#313337</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myloginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#880fc5</item>
+        <item name="colorPrimaryDark">#880fc5</item>
+        <item name="colorAccent">#880fc5</item>
+        <item name="android:textColorSecondary">#E6E6FA</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/chat_op"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#313337"
+        android:elevation="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:id="@+id/backbtnlayout_chat">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/back_img"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="226dp"
+                android:layout_height="35dp"
+                android:text="Syed Ghazanfer Anwar"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/lastSeenStatustxtv"
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/placeholder"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reyclerview_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chatbox_full"
+        android:background="#35383d"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="55dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+<LinearLayout
+    android:id="@+id/chatbox_full"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:padding="3dp"
+    android:background="#35383d">
+    <Button
+        android:id="@+id/attachment"
+        android:layout_marginTop="11dp"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/attachmentbutton_selector" />
+
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:background="@drawable/chat_editor_box"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+       >
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/sendbutton"
+            android:layout_toStartOf="@+id/sendbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:maxHeight="130dp"
+            android:background="@android:color/transparent"
+            android:hint="Enter a message"
+            android:paddingRight="10dp"
+            android:inputType="textCapSentences"
+            />
+
+        <Button
+            android:id="@+id/sendbutton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.11"
+            android:background="@drawable/sendbutton_selector" />
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
