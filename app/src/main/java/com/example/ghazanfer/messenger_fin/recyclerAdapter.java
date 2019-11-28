@@ -46,20 +46,21 @@ public class recyclerAdapter extends RecyclerView.Adapter{
     @Override
     public int getItemViewType(int position) {
         singleMessage2 obj=list.get(position);
-        if(obj.Sender.compareTo(username)==0 && obj.mediaType==null){
+        if(obj.Sender.toLowerCase().compareTo(username.toLowerCase())==0 && obj.mediaType==null){
             return 1;//sender is user
         }
-        else if(obj.receiver.compareTo(username)==0 && obj.mediaType==null){
+        else if(obj.receiver.toLowerCase().compareTo(username.toLowerCase())==0 && obj.mediaType==null){
             return 2;
         }
-        else if(obj.Sender.compareTo(username)==0){
-            if(obj.mediaType.equals(".jpg") || obj.mediaType.equals(".png")) return 3;
+        else if(obj.Sender.toLowerCase().compareTo(username.toLowerCase())==0){
+            if(obj.mediaType.toLowerCase().equals(".jpg") || obj.mediaType.toLowerCase().equals(".png") || obj.mediaType.toLowerCase().equals(".jpeg")) return 3;
             //else return 5;//means currect user send some media
         }
-        else if(obj.receiver.compareTo(username)==0){
-            if(obj.mediaType.equals(".jpg") || obj.mediaType.equals(".png")) return 4;
+        else if(obj.receiver.toLowerCase().compareTo(username.toLowerCase())==0){
+            if(obj.mediaType.toLowerCase().equals(".jpg") || obj.mediaType.toLowerCase().equals(".png") ||obj.mediaType.toLowerCase().equals(".jpeg")) return 4;
             //else return 6;//means currect user received some media
         }
+        Log.d("WHY", "getItemViewType: "+obj.Sender+"   "+username+"   "+obj.receiver+"  "+obj.mediaType);
         return 0;
     }
 

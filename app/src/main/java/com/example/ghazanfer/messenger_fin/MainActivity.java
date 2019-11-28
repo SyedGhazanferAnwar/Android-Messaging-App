@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity{
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String username_val=username.getText().toString();
+                final String username_val=username.getText().toString().toLowerCase();
                 final String password_val=password.getText().toString();
                 if(username_val.contains("[")||username_val.contains("]"))
                 {

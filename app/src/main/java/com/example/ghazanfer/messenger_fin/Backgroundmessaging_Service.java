@@ -169,6 +169,7 @@ public class Backgroundmessaging_Service extends Service {
                                 messageobj.put("content", singleObj.getString("content"));
                                 long id = mdatabaseHelper.addData(singleObj.getString("sender"), singleObj.getString("receiver"), messageobj.toString(),
                                         "received", singleObj.getString("time"));
+                                Log.d("CHECKER!", "run: "+id);
                                 if (comm != null)
                                     comm.updateList("", singleObj.getString("sender"));
                                 if (comm != null)

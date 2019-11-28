@@ -79,6 +79,8 @@ public class databaseHelper extends SQLiteOpenHelper {
         contentValues.put("messageStatus",messageStaus);
         contentValues.put("Time",Time);
         long inserted=db.insert("messages"+username,null,contentValues);
+        Log.d("CHECKER!2", "run: "+username);
+
         return inserted;
     }
 

@@ -402,7 +402,7 @@ public class frag_messaging_Activity extends AppCompatActivity  implements Commu
                         //call functions to show this image in ui
 
                         dialog.dismiss();
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }

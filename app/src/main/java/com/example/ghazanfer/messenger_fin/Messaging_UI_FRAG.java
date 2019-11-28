@@ -84,10 +84,6 @@ public class Messaging_UI_FRAG extends Fragment {
                 bottomSheetDialogFragment = new CustomBottomSheetDialogFragment();
                 bottomSheetDialogFragment.receiver=receiver;
 
-
-
-
-
                 //show it
                 bottomSheetDialogFragment.show(getFragmentManager(), bottomSheetDialogFragment.getTag());
             }

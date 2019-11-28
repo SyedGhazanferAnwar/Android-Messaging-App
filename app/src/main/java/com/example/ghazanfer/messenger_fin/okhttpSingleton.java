@@ -9,7 +9,7 @@ import okhttp3.OkHttpClient;
 
 public class okhttpSingleton {
 
-    public static final String MYBASEURL="http://168.211.136.241/okhttp/";
+    public static final String MYBASEURL="http://103.12.120.110/okhttp/";
     public static final String MYURL=MYBASEURL+"index.php";
     public static final String SPECIAL_ACCESS_KEY="dc3a2828b7ffb1ddaff3cdafb081df13";
 

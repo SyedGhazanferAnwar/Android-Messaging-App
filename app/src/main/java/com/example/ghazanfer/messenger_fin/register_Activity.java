@@ -80,7 +80,7 @@ public class register_Activity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                final String username_val=username.getText().toString();
+                final String username_val=username.getText().toString().toLowerCase();
                 final String password_val=password.getText().toString();
                 final String fullname_val=fullname.getText().toString();
                 final String email_val=email.getText().toString();
